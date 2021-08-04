@@ -68,13 +68,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/line_bottom"
-        app:layout_constraintTop_toBottomOf="@+id/line_top"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:listitem="@layout/feed_item"
+        app:layout_constraintTop_toBottomOf="@+id/line_top"
         tools:itemCount="3"
-        />
+        tools:listitem="@layout/feed_item" />
 
     <View
         android:id="@+id/line_bottom"
@@ -99,7 +98,7 @@
         android:id="@+id/btn_person"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_baseline_person_pin_24"
+        android:src="@drawable/ic_baseline_person_pin_2 4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_home"
         app:layout_constraintBottom_toBottomOf="parent"

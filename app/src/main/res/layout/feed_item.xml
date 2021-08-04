@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -144,9 +145,10 @@
         app:layout_constraintTop_toBottomOf="@id/txt_person_name"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/gray"
-        android:textSize="11sp"
+        android:textSize="10sp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="3dp"/>
+        android:layout_marginTop="3dp"
+        tools:ignore="SmallSp" />
 
     <TextView
         android:id="@+id/txt_person_name_seccond_use"
@@ -186,5 +188,93 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
         android:contentDescription="@string/heart_to_like"/>
+
+     <ImageView
+        android:id="@+id/img_person_icon_commentary"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_person_pin_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_heart_commentary"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/person_icon" />
+
+    <TextView
+        android:id="@+id/txt_add_new_commentary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_commentary"
+        app:layout_constraintTop_toTopOf="@id/img_person_icon_commentary"
+        app:layout_constraintStart_toEndOf="@id/img_person_icon_commentary"
+        app:layout_constraintBottom_toBottomOf="@id/img_person_icon_commentary"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/img_plus_comment"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_baseline_add_box_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_add_new_commentary"
+        app:layout_constraintBottom_toBottomOf="@id/txt_add_new_commentary"
+        android:contentDescription="@string/plus_icon" />
+
+    <ImageView
+        android:id="@+id/icon_hands"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_baseline_back_hand_24"
+        app:layout_constraintEnd_toStartOf="@id/img_plus_comment"
+        app:layout_constraintTop_toTopOf="@+id/txt_add_new_commentary"
+        app:layout_constraintBottom_toBottomOf="@id/txt_add_new_commentary"
+        android:contentDescription="@string/plus_icon" />
+
+    <ImageView
+        android:id="@+id/icon_heart_comment"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintEnd_toStartOf="@id/icon_hands"
+        app:layout_constraintTop_toTopOf="@+id/txt_add_new_commentary"
+        app:layout_constraintBottom_toBottomOf="@id/txt_add_new_commentary"
+        android:contentDescription="@string/plus_icon" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_57_minutos"
+        app:layout_constraintTop_toBottomOf="@id/img_person_icon_commentary"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/gray"
+        android:textSize="7sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/txt_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/translate"
+        app:layout_constraintTop_toBottomOf="@id/img_person_icon_commentary"
+        app:layout_constraintStart_toEndOf="@id/txt_time"
+        android:textColor="@color/gray"
+        android:textSize="7sp"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        tools:ignore="SmallSp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
