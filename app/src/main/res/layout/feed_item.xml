@@ -36,17 +36,116 @@
         android:src="@drawable/ic_baseline_more_vert_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/img_person_icon"
-        app:layout_constraintBottom_toBottomOf="@id/img_person_icon"/>
+        app:layout_constraintBottom_toBottomOf="@id/img_person_icon"
+        />
 
     <ImageView
         android:id="@+id/img_main"
         android:layout_width="0dp"
         android:layout_height="400dp"
-        android:src="@drawable/insta_1"
+        android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
-        app:layout_constraintTop_toBottomOf="@+id/img_person_icon"
+        android:src="@drawable/insta_1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_person_icon"
+        />
+
+    <ImageView
+        android:id="@+id/img_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_main"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/img_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/img_heart"
+        app:layout_constraintTop_toBottomOf="@id/img_main"
+        android:src="@drawable/ic_baseline_mode_comment_24"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/img_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img_comment"
+        app:layout_constraintTop_toBottomOf="@id/img_main"
+        android:src="@drawable/ic_baseline_send_24"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_baseline_bookmark_border_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/img_main" />
+
+    <TextView
+        android:id="@+id/txt_liked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/liked"
+        app:layout_constraintTop_toBottomOf="@id/img_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/txt_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/person_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_liked"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle"
+        app:layout_constraintTop_toBottomOf="@id/txt_liked"
+        app:layout_constraintStart_toEndOf="@id/txt_person_name"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/txt_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment"
+        app:layout_constraintTop_toBottomOf="@id/txt_person_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"/>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Instagram</string>
     <string name="person_name">gustavo.da.hora</string>
+    <string name="liked">Curtido por mathh_s e outras pessoas</string>
+    <string name="subtitle">Mais uma perola, e ai qual item da?</string>
+    <string name="comment">Ver todos os 33 comentarios</string>
 </resources>
