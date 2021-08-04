@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toTopOf="@id/line_top"
-        />
+        android:contentDescription="@string/logomarca" />
 
     <ImageView
         android:id="@+id/img_send_title"
@@ -27,7 +27,8 @@
         android:src="@drawable/ic_baseline_send_24"
         app:layout_constraintBottom_toBottomOf="@+id/app_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/app_title" />
+        app:layout_constraintTop_toTopOf="@+id/app_title"
+        android:contentDescription="@string/send_button" />
 
     <ImageView
         android:id="@+id/img_heart_title"
@@ -35,9 +36,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:src="@drawable/ic_baseline_favorite_border_24"
+
         app:layout_constraintBottom_toBottomOf="@+id/app_title"
         app:layout_constraintEnd_toStartOf="@id/img_send_title"
-        app:layout_constraintTop_toTopOf="@+id/app_title" />
+        app:layout_constraintTop_toTopOf="@+id/app_title"
+        android:contentDescription="@string/favorite_heart_icon" />
 
     <ImageView
         android:id="@+id/img_plus_title"
@@ -47,7 +50,8 @@
         android:src="@drawable/ic_baseline_add_box_24"
         app:layout_constraintBottom_toBottomOf="@+id/app_title"
         app:layout_constraintEnd_toStartOf="@+id/img_heart_title"
-        app:layout_constraintTop_toTopOf="@+id/app_title" />
+        app:layout_constraintTop_toTopOf="@+id/app_title"
+        android:contentDescription="@string/plus_icon" />
 
     <View
         android:id="@+id/line_top"
@@ -88,7 +92,8 @@
         android:src="@drawable/ic_baseline_home_24"
         app:layout_constraintEnd_toStartOf="@id/btn_person"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/home_button" />
 
     <ImageView
         android:id="@+id/btn_person"
@@ -97,6 +102,7 @@
         android:src="@drawable/ic_baseline_person_pin_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_home"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/person_icon_to_change_screen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

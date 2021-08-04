@@ -15,7 +15,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/img_main"
-        />
+        android:contentDescription="@string/person_icon" />
 
     <TextView
         android:id="@+id/txt_person"
@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/img_person_icon"
         app:layout_constraintBottom_toBottomOf="@id/img_person_icon"
-        />
+        android:contentDescription="@string/menu_icon" />
 
     <ImageView
         android:id="@+id/img_main"
@@ -50,7 +50,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_person_icon"
-        />
+        android:contentDescription="@string/person_photo" />
 
     <ImageView
         android:id="@+id/img_heart"
@@ -61,7 +61,8 @@
         android:src="@drawable/ic_baseline_favorite_border_24"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/heart_to_like" />
 
     <ImageView
         android:id="@+id/img_comment"
@@ -72,7 +73,8 @@
         app:layout_constraintTop_toBottomOf="@id/img_main"
         android:src="@drawable/ic_baseline_mode_comment_24"
         android:layout_marginStart="7dp"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/comment_icon" />
 
     <ImageView
         android:id="@+id/img_send"
@@ -83,7 +85,8 @@
         android:src="@drawable/ic_baseline_send_24"
         android:layout_marginTop="5dp"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/send_img" />
 
     <ImageView
         android:id="@+id/img_favorite"
@@ -93,7 +96,8 @@
         android:src="@drawable/ic_baseline_bookmark_border_24"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="5dp"
-        app:layout_constraintTop_toBottomOf="@id/img_main" />
+        app:layout_constraintTop_toBottomOf="@id/img_main"
+        android:contentDescription="@string/bookmark_icon" />
 
     <TextView
         android:id="@+id/txt_liked"
@@ -144,8 +148,43 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="3dp"/>
 
+    <TextView
+        android:id="@+id/txt_person_name_seccond_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dezk11"
+        app:layout_constraintTop_toBottomOf="@id/txt_comment"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        />
 
+    <TextView
+        android:id="@+id/txt_person_subtitle_comentary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/person_comment"
+        app:layout_constraintTop_toBottomOf="@id/txt_comment"
+        app:layout_constraintStart_toEndOf="@id/txt_person_name_seccond_use"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"/>
 
-
+    <ImageView
+        android:id="@+id/img_heart_commentary"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/heart_to_like"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,21 @@
     <string name="liked">Curtido por mathh_s e outras pessoas</string>
     <string name="subtitle">Mais uma perola, e ai qual item da?</string>
     <string name="comment">Ver todos os 33 comentarios</string>
+    <string name="logomarca">Logomarca</string>
+    <string name="send_button">Send button</string>
+    <string name="favorite_heart_icon">Favorite heart icon</string>
+    <string name="plus_icon">Plus icon</string>
+    <string name="home_button">Home Button</string>
+    <string name="person_icon_to_change_screen">Person icon to change screen.</string>
+    <string name="person_icon">Person Icon</string>
+    <string name="menu_icon">menu icon</string>
+    <string name="person_photo">Person photo</string>
+    <string name="heart_to_favorite">Heart to favorite</string>
+    <string name="comment_icon">Comment icon</string>
+    <string name="send_img">Send img.</string>
+    <string name="heart_to_like">heart to like</string>
+    <string name="bookmark_icon">bookmark icon</string>
+    <string name="desk11">Desk11</string>
+    <string name="dezk11">Dezk11</string>
+    <string name="person_comment">O sorvete poderia estar em java</string>
 </resources>
