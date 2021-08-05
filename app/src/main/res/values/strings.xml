@@ -32,4 +32,6 @@
     <string name="person_follows">Seguidores</string>
     <string name="person_following_number">351</string>
     <string name="person_following">Seguindo</string>
+    <string name="grid_icon">Grid icon</string>
+    <string name="play_button_icon">Play button icon</string>
 </resources>
