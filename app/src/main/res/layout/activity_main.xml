@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:src="@drawable/ic_baseline_favorite_border_24"
-
         app:layout_constraintBottom_toBottomOf="@+id/app_title"
         app:layout_constraintEnd_toStartOf="@id/img_send_title"
         app:layout_constraintTop_toTopOf="@+id/app_title"
@@ -98,10 +97,11 @@
         android:id="@+id/btn_person"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_baseline_person_pin_2 4"
+        android:src="@drawable/ic_baseline_person_pin_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_home"
         app:layout_constraintBottom_toBottomOf="parent"
         android:contentDescription="@string/person_icon_to_change_screen" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
