@@ -66,8 +66,6 @@
         android:id="@+id/person_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:text="@string/gustavo_da_hora"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -75,8 +73,113 @@
         app:layout_constraintStart_toStartOf="@id/img_person_icon"
         app:layout_constraintTop_toBottomOf="@id/img_person_icon"
         app:layout_constraintEnd_toEndOf="@id/img_person_icon"
-        android:layout_marginBottom="5dp"
         android:contentDescription="@string/logomarca"
         tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:id="@+id/layout_publications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/img_person_icon"
+        app:layout_constraintBottom_toBottomOf="@id/img_person_icon"
+        app:layout_constraintStart_toEndOf="@id/img_person_icon"
+        app:layout_constraintEnd_toStartOf="@id/layout_follows"
+        >
+
+        <TextView
+            android:id="@+id/txt_publication_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person_publications_number"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:contentDescription="@string/logomarca"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_publication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person_publication"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:contentDescription="@string/logomarca"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_follows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/img_person_icon"
+        app:layout_constraintEnd_toEndOf="@id/layout_following"
+        app:layout_constraintStart_toEndOf="@id/layout_publications"
+        app:layout_constraintTop_toTopOf="@id/img_person_icon">
+
+        <TextView
+            android:id="@+id/txt_follows_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logomarca"
+            android:text="@string/person_follows_number"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logomarca"
+            android:text="@string/person_follows"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/img_person_icon"
+        app:layout_constraintBottom_toBottomOf="@id/img_person_icon"
+        app:layout_constraintStart_toEndOf="@id/layout_follows"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/txt_following_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person_following_number"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:contentDescription="@string/logomarca"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person_following"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:contentDescription="@string/logomarca"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
