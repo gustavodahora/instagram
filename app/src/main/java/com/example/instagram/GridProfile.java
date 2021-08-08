@@ -96,8 +96,6 @@ public class GridProfile extends AppCompatActivity {
             public void bind(MainItem item) {
                 ImageView imgMain = itemView.findViewById(R.id.img_main);
 
-                imgMain.setOnClickListener(v -> Toast.makeText(getApplicationContext(), "CHAMA MEU PATRÃO", Toast.LENGTH_SHORT).show());
-
                 imgMain.setImageResource(item.getImageId());
             }
         }
