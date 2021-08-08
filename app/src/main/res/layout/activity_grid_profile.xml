@@ -267,6 +267,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_home"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:contentDescription="@string/person_icon_to_change_screen" />
+        android:contentDescription="@string/person_icon_to_change_screen"
+        app:tint="@color/gray" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
