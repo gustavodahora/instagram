@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         btnProfile.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, GridProfile.class)));
     }
 
-    private class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder> {
+    public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder> {
         private final List<MainItem> mainItems;
 
         public MainAdapter(List<MainItem> mainItems) {
